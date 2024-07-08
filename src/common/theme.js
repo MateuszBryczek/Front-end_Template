@@ -4,6 +4,9 @@ const colorNames = {
   White: "#FFFFFF",
   Whisper: "#F5F5FA", //light grey
   Woodsmoke: "#0e1111", //black
+  RipeLemon: "#f5de19", // JS icon - yellow
+  CuriusBlue: "#33a9dc", //CSS icon - blue
+  Studio: "#5f43b2",
 };
 
 export const GlobalTheme = {    //add more resolutions in style
@@ -21,8 +24,11 @@ colors: {
   textPrimary: colorNames.Woodsmoke,
 },
 navigation: {
-  primary: colorNames.Woodsmoke,
-  textPrimary: colorNames.White
+  textPrimary: colorNames.Studio,
+  textSecondary: colorNames.Whisper,
+  cssBackground: colorNames.CuriusBlue,
+  jsBackground: colorNames.RipeLemon,
+  defaultBackground: colorNames.Woodsmoke,
 },
 };
 
