@@ -1,7 +1,10 @@
 import { GlobalStyle } from "./common/GlobalStyle";
 import Theme from "./common/theme";
-import Header from "./common/Header";
 import Navigation from "./common/Navigation";
+import { Route, Routes, Navigate } from "react-router-dom";
+import HomePage from "./features/HomePage";
+import CssPage from "./features/CssPage";
+import JsPage from "./features/JsPage"
 
 export const App = () => {
   return (
@@ -9,8 +12,12 @@ export const App = () => {
     <Theme>
         <GlobalStyle />
           <Navigation/>
-          <Header />
-          
+          <Routes>
+            <Route path="/Home" element={<HomePage />} />
+            <Route path="/CSS" element={<CssPage />} />
+            <Route path="/JavaScript" element={<JsPage />} />
+            <Route path="*" element={<Navigate to="/Home" replace />} />
+          </Routes>
       </Theme>
     </>
   );
