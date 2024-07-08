@@ -1,9 +1,9 @@
 import Header from "../../common/Header";
 
-const JsPage = () => (
+const HomePage = () => (
     <>
         <Header />
     </>
 );
 
-export default JsPage;
+export default HomePage;
