@@ -1,6 +1,7 @@
 {
   "name": "front-end_template",
   "version": "0.1.0",
+  "homepage": "https://mateuszbryczek.github.io/Front-end_Template/",
   "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
