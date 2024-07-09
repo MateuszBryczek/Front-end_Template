@@ -13,6 +13,8 @@ export const Wrapper = styled.nav`
     color: ${({ theme }) => theme.navigation.textSecoundary};
     //box-shadow: 0px 10px 24px 0px ;
     transition: 1s;
+    position: sticky;
+    top: 5px;
 `;
 
 export const HomeWrapper = styled.div`
