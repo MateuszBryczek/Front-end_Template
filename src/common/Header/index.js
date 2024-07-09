@@ -1,10 +1,6 @@
-import { StyledHeader } from "./styled";
+import styled from "styled-components";
 
-
-export const Header = () => (
-    <>
-        <StyledHeader>FRONT-END_TEMPLATE</StyledHeader>
-    </>
-);
-
-export default Header;
+export const Header = styled.h1`
+    text-align: center;
+    font-weight: bold;
+`;

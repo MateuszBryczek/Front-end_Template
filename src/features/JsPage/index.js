@@ -1,8 +1,8 @@
-import Header from "../../common/Header";
+import { Header } from "../../common/Header";
 
 const JsPage = () => (
     <>
-        <Header />
+        <Header>JavaScript</Header>
     </>
 );
 

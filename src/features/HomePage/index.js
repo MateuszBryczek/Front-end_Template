@@ -1,8 +1,8 @@
-import Header from "../../common/Header";
+import { Header } from "../../common/Header";
 
 const HomePage = () => (
     <>
-        <Header />
+        <Header>Front-End_Template</Header>
     </>
 );
 

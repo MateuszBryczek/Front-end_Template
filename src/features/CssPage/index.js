@@ -1,8 +1,8 @@
-import Header from "../../common/Header"
+import { Header } from "../../common/Header";
 
 const CssPage = () => (
     <>
-        <Header />
+        <Header>CSS</Header>
     </>
 );
 
