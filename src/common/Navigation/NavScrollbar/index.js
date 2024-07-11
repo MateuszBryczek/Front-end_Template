@@ -8,7 +8,7 @@ const NavScrollbar = () => {
     const scrollToSection = (sectionId) => {
         document.getElementById(sectionId).scrollIntoView({ behavior: "smooth" })
     }
-    
+    //add getThemeColor ?
     return (
     <Wrapper>
         <StyledList>
@@ -24,6 +24,7 @@ const NavScrollbar = () => {
                     <StyledLink onClick={() => scrollToSection("1")}>1</StyledLink>
                     <StyledLink onClick={() => scrollToSection("2")}>2</StyledLink>
                     <StyledLink onClick={() => scrollToSection("3")}>3</StyledLink>
+                    <StyledLink onClick={() => scrollToSection("4")}>4</StyledLink>
                 </>
             )}
         </StyledList>

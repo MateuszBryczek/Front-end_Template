@@ -22,13 +22,13 @@ colors: {
   background: colorNames.Whisper,
   primary: colorNames.White,
   textPrimary: colorNames.Woodsmoke,
+  cssColor: colorNames.CuriusBlue,
+  jsColor: colorNames.RipeLemon,
+  defaultColor: colorNames.Woodsmoke,
 },
 navigation: {
   textPrimary: colorNames.Studio,
   textSecondary: colorNames.Whisper,
-  cssBackground: colorNames.CuriusBlue,
-  jsBackground: colorNames.RipeLemon,
-  defaultBackground: colorNames.Woodsmoke,
 },
 };
 
