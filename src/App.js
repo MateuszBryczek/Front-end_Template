@@ -5,7 +5,6 @@ import { Route, Routes, Navigate } from "react-router-dom";
 import HomePage from "./features/HomePage";
 import CssPage from "./features/CssPage";
 import JsPage from "./features/JsPage"
-import NavScrollbar from "./common/Navigation/NavScrollbar";
 
 export const App = () => {
   return (
@@ -13,7 +12,6 @@ export const App = () => {
     <Theme>
         <GlobalStyle />
           <Navigation/>
-          <NavScrollbar/>
           <Routes>
             <Route path="/Home" element={<HomePage />} />
             <Route path="/CSS" element={<CssPage />} />
