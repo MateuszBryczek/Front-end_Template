@@ -1,5 +1,6 @@
 import { useLocation } from "react-router-dom";
 import { useTheme } from "styled-components";
+import { getThemeColor } from "../../features/getThemeColor/getThemeColor";
 import { 
     Wrapper,
     StyledHomeNavLink,
@@ -17,19 +18,8 @@ const Navigation = () => {
     const location = useLocation();
     const theme = useTheme();
 
-    const getBackgroundColor = () => {
-        switch (location.pathname) {
-            case "/CSS":
-                return theme.navigation.cssBackground;
-            case "/JavaScript":
-                return theme.navigation.jsBackground;
-            default:
-                return theme.navigation.defaultBackground;
-        }
-    };
-
     return (
-    <Wrapper $backgroundColor={getBackgroundColor()}>
+    <Wrapper $getThemeColor={getThemeColor(location.pathname, theme)}>
         <HomeWrapper>
             <StyledHomeNavLink to="/Home">
                 <Home src={homeIcon} alt="HOME" />

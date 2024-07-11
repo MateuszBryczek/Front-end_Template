@@ -9,7 +9,7 @@ export const Wrapper = styled.nav`
     height: 100px;
     margin: 5px;
     padding: 10px;
-    background-color: ${({ $backgroundColor }) => $backgroundColor};
+    background-color: ${({ $getThemeColor }) => $getThemeColor};
     color: ${({ theme }) => theme.navigation.textSecoundary};
     //box-shadow: 0px 10px 24px 0px ;
     transition: 1s;
@@ -28,6 +28,8 @@ export const Home = styled(HomeIcon)`
     width: 75px;
     height: 75px;
     color: ${({ theme }) => theme.navigation.textSecondary};
+    display: flex;
+    justify-content: center;
     
     &:hover {
         cursor: pointer;
