@@ -8,6 +8,7 @@ export const Wrapper = styled.nav`
     max-width: 100%;
     height: 100px;
     margin: 5px;
+    margin-bottom: 0px;
     padding: 10px;
     background-color: ${({ $getThemeColor }) => $getThemeColor};
     color: ${({ theme }) => theme.navigation.textSecoundary};
