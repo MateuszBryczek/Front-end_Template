@@ -1,6 +1,4 @@
-import { useLocation } from "react-router-dom";
-import { useTheme } from "styled-components";
-import { getThemeColor } from "../../features/getThemeColor/getThemeColor";
+import useThemeColor from "../../features/useThemeColor/useThemeColor";
 import { 
     Wrapper,
     StyledHomeNavLink,
@@ -15,11 +13,10 @@ import cssIcon from "../../images/css_icon.svg";
 import jsIcon from "../../images/js_icon.svg";
 
 const Navigation = () => {
-    const location = useLocation();
-    const theme = useTheme();
+    const themeColor = useThemeColor();
 
     return (
-    <Wrapper $getThemeColor={getThemeColor(location.pathname, theme)}>
+    <Wrapper $getThemeColor={themeColor}>
         <HomeWrapper>
             <StyledHomeNavLink to="/Home">
                 <Home src={homeIcon} alt="HOME" />
