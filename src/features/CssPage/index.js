@@ -6,19 +6,16 @@ import {
     SectionWrapper 
 } from "../../common/Section";
 import NavScrollbar from "../../common/Navigation/NavScrollbar";
-import { useLocation } from "react-router-dom";
-import { useTheme } from "styled-components";
-import { getThemeColor } from "../getThemeColor/getThemeColor";
+import useThemeColor from "../useThemeColor/useThemeColor";
 
 const CssPage = () => {
-    const location = useLocation();
-    const theme = useTheme();
+    const themeColor = useThemeColor();
     
     return (
     <>
     <Wrapper>
         <NavScrollbar/>
-        <Header $getThemeColor={getThemeColor(location.pathname, theme)}>CSS</Header>
+        <Header $getThemeColor={ themeColor }>CSS</Header>
             <SectionWrapper>
                 <SectionHeader id="1">1</SectionHeader>
                     <Section >1</Section>

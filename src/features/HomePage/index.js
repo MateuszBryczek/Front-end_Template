@@ -1,15 +1,12 @@
 import { Header } from "../../common/Header";
-import { useLocation } from "react-router-dom";
-import { useTheme } from "styled-components";
-import { getThemeColor } from "../getThemeColor/getThemeColor";
+import useThemeColor from "../useThemeColor/useThemeColor";
 
 const HomePage = () => {
-    const location = useLocation();
-    const theme = useTheme();
+    const themeColor = useThemeColor();
     
     return (
     <>
-        <Header $getThemeColor={getThemeColor(location.pathname, theme)}>Front-End_Template</Header>
+        <Header $getThemeColor={ themeColor }>Front-End_Template</Header>
     </>
 );
 };

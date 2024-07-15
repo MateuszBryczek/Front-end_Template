@@ -22,14 +22,23 @@ colors: {
   background: colorNames.Whisper,
   primary: colorNames.White,
   textPrimary: colorNames.Woodsmoke,
-  cssColor: colorNames.CuriusBlue,
-  jsColor: colorNames.RipeLemon,
-  defaultColor: colorNames.Woodsmoke,
 },
 navigation: {
   textPrimary: colorNames.Studio,
-  textSecondary: colorNames.Whisper,
+  textSecondary: colorNames.Woodsmoke,
 },
+homePage: {
+  primary: colorNames.Woodsmoke,
+  header: colorNames.Studio,
+},
+cssPage: {
+  primary: colorNames.CuriusBlue,
+  header: colorNames.CuriusBlue,
+},
+jsPage: {
+  primary: colorNames.RipeLemon,
+  header: colorNames.RipeLemon,
+}
 };
 
 export default function Theme({ children }) {
