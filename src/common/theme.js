@@ -7,6 +7,14 @@ const colorNames = {
   RipeLemon: "#f5de19", // JS icon - yellow
   CuriusBlue: "#33a9dc", //CSS icon - blue
   Studio: "#5f43b2",
+
+  //CodeSpace colors
+  Black: "#000000",
+  Red: "#FF0000",
+  Green: "#228B22",
+  Blue: "#0000FF",
+  Purple: "#A020F0",
+  Orange: "#CC5500",
 };
 
 export const GlobalTheme = {    //add more resolutions in style
@@ -38,7 +46,15 @@ cssPage: {
 jsPage: {
   primary: colorNames.RipeLemon,
   header: colorNames.RipeLemon,
-}
+},
+CodeSpace: {
+  default: colorNames.Black,
+  variables: colorNames.Blue,
+  functions: colorNames.Purple,
+  conditionals: colorNames.Purple,
+  symbols: colorNames.Green,
+  strings: colorNames.Orange,
+},
 };
 
 export default function Theme({ children }) {
