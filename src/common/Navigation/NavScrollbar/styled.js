@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.nav`
-    max-width: 100px;
+    width: 180px;
     height: 100%;
     position: sticky;
     top: 110px;
@@ -16,13 +16,13 @@ export const StyledList = styled.ul`
     list-style: none;
     padding: 0px;
     margin: 0px;
-    
 `;
 
 export const StyledLink = styled.li`
-    width: 100%;
+    width: auto;
     text-decoration: none;
     padding: 5px;
+    margin-left: 10px;
 
     &:hover {
         cursor: pointer;
