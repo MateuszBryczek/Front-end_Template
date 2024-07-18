@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { NavLink } from "react-router-dom";
 
 export const Wrapper = styled.nav`
     width: 180px;
@@ -18,11 +19,13 @@ export const StyledList = styled.ul`
     top: 105px;
 `;
 
-export const StyledLink = styled.li`
+export const StyledLink = styled(NavLink)`
     width: auto;
     text-decoration: none;
     padding: 5px;
     margin-left: 10px;
+    text-decoration: none;
+    color: ${({ theme }) => theme.colors.textPrimary};
 
     &:hover {
         cursor: pointer;

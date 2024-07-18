@@ -5,6 +5,7 @@ import { Route, Routes, Navigate } from "react-router-dom";
 import HomePage from "./features/HomePage";
 import CssPage from "./features/CssPage";
 import JsPage from "./features/JsPage"
+import Page1 from "./features/JsPage/Pages/Page1";
 
 export const App = () => {
   return (
@@ -14,8 +15,8 @@ export const App = () => {
           <Navigation/>
           <Routes>
             <Route path="/Home" element={<HomePage />} />
-            <Route path="/CSS" element={<CssPage />} />
-            <Route path="/JavaScript" element={<JsPage />} />
+            <Route path="/CSS/*" element={<CssPage />} />
+            <Route path="/JavaScript/*" element={<JsPage />} />
             <Route path="*" element={<Navigate to="/Home" replace />} />
           </Routes>
       </Theme>
