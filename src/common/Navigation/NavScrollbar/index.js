@@ -26,14 +26,8 @@ const NavScrollbar = () => {
                     <StyledLink onClick={() => scrollToSection("2")}>2</StyledLink>
                     <StyledLink onClick={() => scrollToSection("3")}>3</StyledLink>
                     <StyledLink onClick={() => scrollToSection("4")}>4</StyledLink>
-                    <StyledLink onClick={() => scrollToSection("1")}>1</StyledLink>
-                    <StyledLink onClick={() => scrollToSection("2")}>2</StyledLink>
-                    <StyledLink onClick={() => scrollToSection("3")}>3</StyledLink>
-                    <StyledLink onClick={() => scrollToSection("4")}>4</StyledLink>
-                    <StyledLink onClick={() => scrollToSection("1")}>1</StyledLink>
-                    <StyledLink onClick={() => scrollToSection("2")}>2</StyledLink>
-                    <StyledLink onClick={() => scrollToSection("3")}>3</StyledLink>
-                    <StyledLink onClick={() => scrollToSection("4")}>4</StyledLink>
+                    <StyledLink onClick={() => scrollToSection("5")}>5</StyledLink>
+                    <StyledLink onClick={() => scrollToSection("6")}>6</StyledLink>
                 </>
             )}
         </StyledList>
