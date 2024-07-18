@@ -1,10 +1,5 @@
 import { Header } from "../../common/Header";
-import { 
-    Wrapper, 
-    SectionHeader, 
-    Section, 
-    SectionWrapper 
-} from "../../common/Section";
+import { Wrapper, } from "../../common/Section";
 import NavScrollbar from "../../common/Navigation/NavScrollbar";
 import useThemeColor from "../useThemeColor/useThemeColor";
 import { Outlet } from "react-router-dom";

@@ -5,7 +5,6 @@ import { Route, Routes, Navigate } from "react-router-dom";
 import HomePage from "./features/HomePage";
 import CssPage from "./features/CssPage";
 import JsPage from "./features/JsPage"
-import Page1 from "./features/JsPage/Pages/Page1";
 
 export const App = () => {
   return (
