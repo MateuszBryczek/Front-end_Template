@@ -1,4 +1,4 @@
-import { StyledLink, StyledList, Wrapper } from "./styled";
+import { StyledLink, StyledList, Wrapper, StyledNavLink } from "./styled";
 import { useLocation } from "react-router-dom";
 import useThemeColor from "../../../features/useThemeColor/useThemeColor";
 
@@ -13,27 +13,17 @@ const NavScrollbar = () => {
     return (
     <Wrapper $getThemeColor={themeColor}>
         <StyledList>
-            {location.pathname === "/CSS" && (
+            {location.pathname.startsWith("/CSS") && (
                 <>
                     <StyledLink onClick={() => scrollToSection("1")}></StyledLink>
                     <StyledLink onClick={() => scrollToSection("2")}>2</StyledLink>
                     <StyledLink onClick={() => scrollToSection("3")}>3</StyledLink>
                 </>
             )}
-            {location.pathname === "/JavaScript" && (
+    
+            {location.pathname.startsWith("/JavaScript") && (
                 <>
-                    <StyledLink onClick={() => scrollToSection("1")}>"Hello World!"</StyledLink>
-                    <StyledLink onClick={() => scrollToSection("2")}>2</StyledLink>
-                    <StyledLink onClick={() => scrollToSection("3")}>3</StyledLink>
-                    <StyledLink onClick={() => scrollToSection("4")}>4</StyledLink>
-                    <StyledLink onClick={() => scrollToSection("1")}>1</StyledLink>
-                    <StyledLink onClick={() => scrollToSection("2")}>2</StyledLink>
-                    <StyledLink onClick={() => scrollToSection("3")}>3</StyledLink>
-                    <StyledLink onClick={() => scrollToSection("4")}>4</StyledLink>
-                    <StyledLink onClick={() => scrollToSection("1")}>1</StyledLink>
-                    <StyledLink onClick={() => scrollToSection("2")}>2</StyledLink>
-                    <StyledLink onClick={() => scrollToSection("3")}>3</StyledLink>
-                    <StyledLink onClick={() => scrollToSection("4")}>4</StyledLink>
+                    <StyledLink to="/JavaScript/HelloWorld">"Hello World!"</StyledLink>
                 </>
             )}
         </StyledList>

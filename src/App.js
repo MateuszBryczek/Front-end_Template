@@ -14,8 +14,8 @@ export const App = () => {
           <Navigation/>
           <Routes>
             <Route path="/Home" element={<HomePage />} />
-            <Route path="/CSS" element={<CssPage />} />
-            <Route path="/JavaScript" element={<JsPage />} />
+            <Route path="/CSS/*" element={<CssPage />} />
+            <Route path="/JavaScript/*" element={<JsPage />} />
             <Route path="*" element={<Navigate to="/Home" replace />} />
           </Routes>
       </Theme>

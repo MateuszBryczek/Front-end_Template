@@ -5,27 +5,26 @@ export const useThemeColor = () => {
     const location = useLocation();
     const theme = useTheme();
 
-    switch (location.pathname) {
-        case "/Home":
-            return {
-                primary: theme.homePage.primary,
-                header: theme.homePage.header,
-            }
-        case "/CSS":
-            return {
-                primary: theme.cssPage.primary,
-                header: theme.cssPage.header,
-            }
-        case "/JavaScript":
-            return {
-                primary: theme.jsPage.primary,
-                header: theme.jsPage.header,
-            }
-        default:
-            return {
-                primary: theme.homePage.primary,
-                header: theme.homePage.header,
-            }
+    if (location.pathname.startsWith("/Home")) {
+        return {
+            primary: theme.homePage.primary,
+            header: theme.homePage.header,
+        };
+    } else if (location.pathname.startsWith("/CSS")) {
+        return {
+            primary: theme.cssPage.primary,
+            header: theme.cssPage.header,
+        };
+    } else if (location.pathname.startsWith("/JavaScript")) {
+        return {
+            primary: theme.jsPage.primary,
+            header: theme.jsPage.header,
+        };
+    } else {
+        return {
+            primary: theme.homePage.primary,
+            header: theme.homePage.header,
+        };
     }
 };
 
