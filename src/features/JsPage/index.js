@@ -5,6 +5,7 @@ import useThemeColor from "../useThemeColor/useThemeColor";
 import { Outlet } from "react-router-dom";
 import { Route, Routes } from "react-router-dom";
 import Page1 from "./Pages/Page1";
+import Page2 from "./Pages/Page2";
 
 const JsPage = () => {
     const themeColor = useThemeColor();
@@ -15,7 +16,8 @@ const JsPage = () => {
         <NavScrollbar/>
         <Header $getThemeColor={ themeColor }>JavaScript</Header>
             <Routes>
-                <Route path="HelloWorld" element={<Page1 />} />
+                <Route path="Page1" element={<Page1 />} />
+                <Route path="Page2" element={<Page2 />} />
             </Routes>
             <Outlet />
     </Wrapper>
