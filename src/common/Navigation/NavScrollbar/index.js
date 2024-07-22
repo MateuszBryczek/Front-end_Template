@@ -1,6 +1,11 @@
-import { StyledLink, StyledList, Wrapper, StyledNavLink } from "./styled";
+import { 
+    StyledLink, 
+    StyledList, 
+    Wrapper, 
+} from "./styled";
 import { useLocation } from "react-router-dom";
 import useThemeColor from "../../../features/useThemeColor/useThemeColor";
+import Dropdown from "./DropdownList";
 
 const NavScrollbar = () => {
     const location = useLocation();
@@ -8,22 +13,51 @@ const NavScrollbar = () => {
 
     const scrollToSection = (sectionId) => {
         document.getElementById(sectionId).scrollIntoView({ behavior: "smooth" })
-    }
+    };
+
+    const sections = {
+        "/JavaScript/Page1": ["1","2","3"],
+        "/JavaScript/Page2": ["1","2"],
+        "/JavaScript/Page3": ["1"],
+    };
+
+    const currentPath = location.pathname;
+    const currentSections = sections[currentPath] || [];
+
+    
+
     //add getThemeColor ?
     return (
     <Wrapper $getThemeColor={themeColor}>
         <StyledList>
             {location.pathname.startsWith("/CSS") && (
                 <>
-                    <StyledLink onClick={() => scrollToSection("1")}></StyledLink>
-                    <StyledLink onClick={() => scrollToSection("2")}>2</StyledLink>
-                    <StyledLink onClick={() => scrollToSection("3")}>3</StyledLink>
+
                 </>
             )}
     
             {location.pathname.startsWith("/JavaScript") && (
                 <>
-                    <StyledLink to="/JavaScript/HelloWorld">"Hello World!"</StyledLink>
+                    <StyledLink to="/JavaScript/Page1">
+                        "page1"
+                    </StyledLink>
+                    {currentPath === "/JavaScript/Page1" && (
+                        <Dropdown sections={currentSections} scrollToSection={scrollToSection} />
+                    )}
+
+                    <StyledLink to="/JavaScript/Page2">
+                        "page2"
+                    </StyledLink>
+                    {currentPath === "/JavaScript/Page2" && (
+                        <Dropdown sections={currentSections} scrollToSection={scrollToSection} />
+                    )}
+
+                    <StyledLink to="/JavaScript/Page3">
+                        "page3"
+                    </StyledLink>
+                    {currentPath === "/JavaScript/Page3" && (
+                        <Dropdown sections={currentSections} scrollToSection={scrollToSection} />
+                    )}
                 </>
             )}
         </StyledList>

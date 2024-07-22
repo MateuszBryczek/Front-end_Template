@@ -12,6 +12,8 @@ export const Wrapper = styled.nav`
 `;
 
 export const StyledList = styled.ul`
+    display: flex;
+    flex-direction: column;
     list-style: none;
     padding: 0px;
     margin: 0px;
