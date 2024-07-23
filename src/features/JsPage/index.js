@@ -16,7 +16,7 @@ const JsPage = () => {
         <NavScrollbar/>
         <Header $getThemeColor={ themeColor }>JavaScript</Header>
             <Routes>
-                <Route path="Page1" element={<Page1 />} />
+                <Route path="JavaScriptBasics" element={<Page1 />} />
                 <Route path="Page2" element={<Page2 />} />
             </Routes>
             <Outlet />

@@ -6,10 +6,10 @@ const CodeSpace = ({ children }) => {
     const theme = useTheme();
 
 const keywordGroups = {
-  variables: ['var', 'let', 'const'],
-  functions: ['function', 'return'],
+  variables: ['var', 'let', 'const', 'script'],
+  functions: ['function', 'return', ],
   conditionals: ['if', 'else', 'for', 'while'],
-  symbols: ['\\(', '\\)', '\\{', '\\}', '\\[', '\\]', '<', '>'],
+  symbols: [],
   strings: ['".*?"', "'.*?'"],
 };
 
