@@ -16,7 +16,7 @@ const NavScrollbar = () => {
     };
 
     const sections = {
-        "/JavaScript/Page1": ["1","2","3"],
+        "/JavaScript/JavaScriptBasics": ["1","2","3"],
         "/JavaScript/Page2": ["1","2"],
         "/JavaScript/Page3": ["1"],
     };
@@ -24,7 +24,6 @@ const NavScrollbar = () => {
     const currentPath = location.pathname;
     const currentSections = sections[currentPath] || [];
 
-    
 
     //add getThemeColor ?
     return (
@@ -38,22 +37,22 @@ const NavScrollbar = () => {
     
             {location.pathname.startsWith("/JavaScript") && (
                 <>
-                    <StyledLink to="/JavaScript/Page1">
-                        "page1"
+                    <StyledLink to="/JavaScript/JavaScriptBasics">
+                        JavaScript Basics
                     </StyledLink>
-                    {currentPath === "/JavaScript/Page1" && (
+                    {currentPath === "/JavaScript/JavaScriptBasics" && (
                         <Dropdown sections={currentSections} scrollToSection={scrollToSection} />
                     )}
 
                     <StyledLink to="/JavaScript/Page2">
-                        "page2"
+                        
                     </StyledLink>
                     {currentPath === "/JavaScript/Page2" && (
                         <Dropdown sections={currentSections} scrollToSection={scrollToSection} />
                     )}
 
                     <StyledLink to="/JavaScript/Page3">
-                        "page3"
+                        
                     </StyledLink>
                     {currentPath === "/JavaScript/Page3" && (
                         <Dropdown sections={currentSections} scrollToSection={scrollToSection} />
