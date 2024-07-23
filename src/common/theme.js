@@ -3,18 +3,20 @@ import { ThemeProvider } from "styled-components";
 const colorNames = {
   White: "#FFFFFF",
   Whisper: "#F5F5FA", //light grey
+  Silver: "#CCCCCC", //grey
   Woodsmoke: "#0e1111", //black
   RipeLemon: "#f5de19", // JS icon - yellow
   CuriusBlue: "#33a9dc", //CSS icon - blue
   Studio: "#5f43b2",
 
   //CodeSpace colors
-  Black: "#000000",
+  Black: "#0e1111",
+  White: "#FFFFFF",
   Red: "#FF0000",
   Green: "#228B22",
-  Blue: "#0000FF",
-  Purple: "#A020F0",
-  Orange: "#CC5500",
+  Blue: "#38ACEC",
+  Purple: "#C87DF7",
+  Orange: "#CD5804",
 };
 
 export const GlobalTheme = {    //add more resolutions in style
@@ -47,8 +49,17 @@ jsPage: {
   primary: colorNames.RipeLemon,
   header: colorNames.RipeLemon,
 },
+section: {
+  background: colorNames.Whisper,
+  textPrimary: colorNames.Woodsmoke
+},
+highlighted: {
+  background: colorNames.Woodsmoke,
+  textPrimary: colorNames.White,
+},
 CodeSpace: {
-  default: colorNames.Black,
+  background: colorNames.Woodsmoke,
+  default: colorNames.White,
   variables: colorNames.Blue,
   functions: colorNames.Purple,
   conditionals: colorNames.Purple,
