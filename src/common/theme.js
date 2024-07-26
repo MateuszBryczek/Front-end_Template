@@ -1,9 +1,8 @@
 import { ThemeProvider } from "styled-components";
 
 const colorNames = {
-  White: "#FFFFFF",
   Whisper: "#F5F5FA", //light grey
-  Silver: "#CCCCCC", //grey
+  Silver: "#C8D0D0", //grey
   Woodsmoke: "#0e1111", //black
   RipeLemon: "#f5de19", // JS icon - yellow
   CuriusBlue: "#33a9dc", //CSS icon - blue
@@ -51,11 +50,15 @@ jsPage: {
 },
 section: {
   background: colorNames.Whisper,
-  textPrimary: colorNames.Woodsmoke
+  textPrimary: colorNames.Woodsmoke,
+  border: colorNames.Silver
 },
 highlighted: {
   background: colorNames.Woodsmoke,
   textPrimary: colorNames.White,
+},
+hint: {
+  background: colorNames.Silver,
 },
 CodeSpace: {
   background: colorNames.Woodsmoke,
