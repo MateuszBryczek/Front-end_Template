@@ -5,26 +5,31 @@ import { StyledCodeSpace } from './styled'
 const CodeSpace = ({ children }) => {
     const theme = useTheme();
 
-const keywordGroups = {
-  variables: ['var', 'let', 'const', 'script'],
-  functions: ['function', 'return', ],
-  conditionals: ['if', 'else', 'for', 'while'],
-  symbols: [],
-  strings: ['".*?"', "'.*?'"],
-};
+  const keywordGroups = {
+    
+    Yellow: ['[a-zA-Z0-9]+\\(\\)'],
+    Purple: ['function', 'return', 'if', 'else', 'for', 'while', '{', '}', '\\(', '\\)'],
+    Orange: ['".*?"', "'.*?'"],
+    LightBlue: ['!DOCTYPE html', 'id', 'type', 'onclick', 'document', 'src'],
+    Blue: ['var', 'let', 'const', 'script', 'head', 'body', 'html', 'h1', 'h2', 'h3', '\\bp\\b', 'button', 'title'],
+    Green: [],
+    Grey: ['[0-9]+\\|', '<', '>', '/'],
+  };
 
-const buildRegex = () => {
-  const groups = Object.values(keywordGroups).flat();
-  return new RegExp(`(${groups.join('|')})`, 'g');
-};
+  const buildRegex = () => {
+    const groups = Object.values(keywordGroups).flat();
+    return new RegExp(`(${groups.join('|')})`, 'g');
+  };
 
   const colors = {
-    variables: theme.CodeSpace.variables,
-    functions: theme.CodeSpace.functions,
-    conditionals: theme.CodeSpace.conditionals,
-    symbols: theme.CodeSpace.symbols,
-    strings: theme.CodeSpace.strings,
     default: theme.CodeSpace.default,
+    Orange: theme.CodeSpace.Orange,
+    Blue: theme.CodeSpace.Blue,
+    LightBlue: theme.CodeSpace.LightBlue,
+    Purple: theme.CodeSpace.Purple,
+    Green: theme.CodeSpace.Green,
+    Yellow: theme.CodeSpace.Yellow,
+    Grey: theme.CodeSpace.Grey,
   };
 
   const splitText = (text) => {

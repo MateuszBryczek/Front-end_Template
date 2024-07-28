@@ -14,8 +14,11 @@ const colorNames = {
   Red: "#FF0000",
   Green: "#228B22",
   Blue: "#38ACEC",
-  Purple: "#C87DF7",
-  Orange: "#CD5804",
+  LightBlue: "#38ddec",
+  Purple: "#CE8BF8",
+  Orange: "#D16619",
+  Yellow: "#E6C13E",
+  Grey: "#8D9292",
 };
 
 export const GlobalTheme = {    //add more resolutions in style
@@ -63,11 +66,13 @@ hint: {
 CodeSpace: {
   background: colorNames.Woodsmoke,
   default: colorNames.White,
-  variables: colorNames.Blue,
-  functions: colorNames.Purple,
-  conditionals: colorNames.Purple,
-  symbols: colorNames.Green,
-  strings: colorNames.Orange,
+  Blue: colorNames.Blue,
+  LightBlue: colorNames.LightBlue,
+  Purple: colorNames.Purple,
+  Green: colorNames.Green,
+  Orange: colorNames.Orange,
+  Yellow: colorNames.Yellow,
+  Grey: colorNames.Grey,
 },
 };
 
