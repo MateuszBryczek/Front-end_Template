@@ -6,12 +6,14 @@ const CodeSpace = ({ children }) => {
     const theme = useTheme();
 
   const keywordGroups = {
-    Blue: ['var', 'let', 'const', 'script', 'head', 'body', 'html', 'h1', 'h2', 'h3', '\\bp\\b', 'button', 'title'],
-    LightBlue: ['!DOCTYPE html', 'id', 'type', 'onclick', 'document', 'src'],
-    Purple: ['function', 'return', 'if', 'else', 'for', 'while', '{', '}'],
-    Green: [],
+    
+    Yellow: ['[a-zA-Z0-9]+\\(\\)'],
+    Purple: ['function', 'return', 'if', 'else', 'for', 'while', '{', '}', '\\(', '\\)'],
     Orange: ['".*?"', "'.*?'"],
-    Grey: ['<', '>', '/'],
+    LightBlue: ['!DOCTYPE html', 'id', 'type', 'onclick', 'document', 'src'],
+    Blue: ['var', 'let', 'const', 'script', 'head', 'body', 'html', 'h1', 'h2', 'h3', '\\bp\\b', 'button', 'title'],
+    Green: [],
+    Grey: ['[0-9]+\\|', '<', '>', '/'],
   };
 
   const buildRegex = () => {
@@ -21,11 +23,12 @@ const CodeSpace = ({ children }) => {
 
   const colors = {
     default: theme.CodeSpace.default,
+    Orange: theme.CodeSpace.Orange,
     Blue: theme.CodeSpace.Blue,
     LightBlue: theme.CodeSpace.LightBlue,
     Purple: theme.CodeSpace.Purple,
     Green: theme.CodeSpace.Green,
-    Orange: theme.CodeSpace.Orange,
+    Yellow: theme.CodeSpace.Yellow,
     Grey: theme.CodeSpace.Grey,
   };
 
