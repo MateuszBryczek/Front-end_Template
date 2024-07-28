@@ -15,8 +15,9 @@ const colorNames = {
   Green: "#228B22",
   Blue: "#38ACEC",
   LightBlue: "#38ddec",
-  Purple: "#C87DF7",
-  Orange: "#CD5804",
+  Purple: "#CE8BF8",
+  Orange: "#D16619",
+  Yellow: "#E6C13E",
   Grey: "#8D9292",
 };
 
@@ -70,6 +71,7 @@ CodeSpace: {
   Purple: colorNames.Purple,
   Green: colorNames.Green,
   Orange: colorNames.Orange,
+  Yellow: colorNames.Yellow,
   Grey: colorNames.Grey,
 },
 };
