@@ -50,7 +50,7 @@ For example, a function can be called when an event occurs, like when the user c
  1|<!DOCTYPE html>
  2|<html>
  3|  <head>
- 4|    <title> Front-End_Template <title/>
+ 4|    <title> Front-End_Template </title>
  5|  </head>
  6|
  7|  <body>
