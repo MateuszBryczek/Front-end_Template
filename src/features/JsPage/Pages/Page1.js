@@ -131,9 +131,10 @@ By using the <Highlighted>innerHTML</Highlighted> we can change the content or t
  1|function myFunction() {
  2|  const x = 5;
  3|  const y = 5;
- 4|
- 5|  document.getElementById("demo").innerHTML = sum;
- 6|}
+ 4|  const sum = x + y;
+ 5|
+ 6|  document.getElementById("demo").innerHTML = sum;
+ 7|}
 `}
 </CodeSpace>
 </Section>
@@ -159,9 +160,10 @@ By using the <Highlighted>document.write()</Highlighted> function, we can write 
  1|function myFunction() {
  2|  const x = 5;
  3|  const y = 5;
- 4|
- 5|  document.write(sum);
- 6|}
+ 4|  const sum = x + y;
+ 5|
+ 6|  document.write(sum);
+ 7|}
 `}
 </CodeSpace>
 <Hint>Using <Highlighted>document.write()</Highlighted> after an HTML document is loaded, will <b>delete all existing HTML</b> in the current page! This method should only be used for testing.</Hint>
@@ -176,23 +178,22 @@ You can skip the <Highlighted>window</Highlighted> keyword.
  1|function myFunction() {
  2|  const x = 5;
  3|  const y = 5;
- 4|
- 5|  alert(sum);
- 6|}
+ 4|  const sum = x + y;
+ 5|
+ 6|  alert(sum);
+ 7|}
 `}
 </CodeSpace>
-
 <Hint>In JavaScript, the <b>window</b> object is the <b>global scope object</b>. This means that variables, properties, and methods by default belong to the window object.</Hint>
 </Section>
         </Article>
 
-        <ArticleHeader id="3">3</ArticleHeader>
+        <ArticleHeader id="3">JavaScript Statements</ArticleHeader>
         <Article>
-            <CodeSpace>
-{`
-console.log("Hello World! 3");
-`}
-            </CodeSpace>
+<SectionHeader></SectionHeader>
+<Section>
+
+</Section>
         </Article>
     </ArticleWrapper>
     </>
