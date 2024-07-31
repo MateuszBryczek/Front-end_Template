@@ -16,9 +16,21 @@ const NavScrollbar = () => {
     };
 
     const sections = {
-        "/JavaScript/JavaScriptBasics": ["1","2","3"],
-        "/JavaScript/Page2": ["1","2"],
-        "/JavaScript/Page3": ["1"],
+        "/JavaScript/JavaScriptBasics": 
+        [
+            { id: "1", name: "Where to write" },
+            { id: "2", name: "JS Output" },
+            { id: "3", name: "3" }
+        ],
+        "/JavaScript/Page2": 
+        [
+            { id: "1", name: "1" },
+            { id: "2", name: "2" }
+        ],
+        "/JavaScript/Page3": 
+        [
+            { id: "1", name: "1" },
+        ],
     };
 
     const currentPath = location.pathname;
@@ -45,14 +57,14 @@ const NavScrollbar = () => {
                     )}
 
                     <StyledLink to="/JavaScript/Page2">
-                        
+                        Page2
                     </StyledLink>
                     {currentPath === "/JavaScript/Page2" && (
                         <Dropdown sections={currentSections} scrollToSection={scrollToSection} />
                     )}
 
                     <StyledLink to="/JavaScript/Page3">
-                        
+                        Page3
                     </StyledLink>
                     {currentPath === "/JavaScript/Page3" && (
                         <Dropdown sections={currentSections} scrollToSection={scrollToSection} />
