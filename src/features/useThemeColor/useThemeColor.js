@@ -18,6 +18,9 @@ export const useThemeColor = () => {
     } else if (location.pathname.startsWith("/JavaScript")) {
         return {
             primary: theme.jsPage.primary,
+            secondary: theme.jsPage.secondary,
+            navPrimary: theme.jsPage.navPrimary,
+            navSecondary: theme.jsPage.navSecondary,
             header: theme.jsPage.header,
         };
     } else {

@@ -4,6 +4,7 @@ export const DropdownList = styled.ul`
     list-style: none;
     padding: 0;
     margin: 0;
+    background-color: ${({ $getThemeColor }) => $getThemeColor.navPrimary};;
 `;
 
 export const DropdownItem = styled.li`
@@ -11,6 +12,6 @@ export const DropdownItem = styled.li`
 
     &:hover {
         cursor: pointer;
-        background-color: #f0f0f0;
+        background-color: ${({ $getThemeColor }) => $getThemeColor.navSecondary};;
     }
 `;

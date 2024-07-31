@@ -4,10 +4,17 @@ const colorNames = {
   Whisper: "#F5F5FA", //light grey
   Silver: "#C8D0D0", //grey
   Woodsmoke: "#0e1111", //black
-  RipeLemon: "#f5de19", // JS icon - yellow
-  CuriusBlue: "#33a9dc", //CSS icon - blue
-  Studio: "#5f43b2",
+  Studio: "#5f43b2", //purple
 
+  //CSS blue by shades
+  CuriusBlue: "#33a9dc", 
+
+  // JS yellow by shades
+  RipeLemon: "#f5de19", 
+  Portica: "#F8E85C", 
+  SweetCorn: "#FAEF89",
+  Drover: "#FCF5B8",
+  
   //CodeSpace colors
   Black: "#0e1111",
   White: "#FFFFFF",
@@ -49,7 +56,11 @@ cssPage: {
 },
 jsPage: {
   primary: colorNames.RipeLemon,
+  secondary: colorNames.Portica,
+  navPrimary: colorNames.SweetCorn,
+  navSecondary: colorNames.Drover,
   header: colorNames.RipeLemon,
+
 },
 section: {
   background: colorNames.Whisper,
