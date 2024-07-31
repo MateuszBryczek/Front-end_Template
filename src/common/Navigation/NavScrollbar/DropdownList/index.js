@@ -2,12 +2,15 @@ import {
     DropdownItem,
     DropdownList,
 } from "./styled";
+import useThemeColor from "../../../../features/useThemeColor/useThemeColor";
 
 const Dropdown = ({ sections, scrollToSection }) => {
+    const themeColor = useThemeColor();
+
     return (
-        <DropdownList>
+        <DropdownList $getThemeColor={themeColor}>
             {sections.map(({ id, name }) => (
-                <DropdownItem key={id} onClick={() => scrollToSection(id)}>
+                <DropdownItem $getThemeColor={themeColor} key={id} onClick={() => scrollToSection(id)}>
                     {name}
                 </DropdownItem>
             ))}

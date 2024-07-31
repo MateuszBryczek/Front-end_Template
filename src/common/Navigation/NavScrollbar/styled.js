@@ -25,14 +25,11 @@ export const StyledLink = styled(NavLink)`
     width: auto;
     text-decoration: none;
     padding: 5px;
-    margin-left: 10px;
-    text-decoration: none;
+    border-bottom: solid 1px ;
     color: ${({ theme }) => theme.colors.textPrimary};
 
     &:hover {
         cursor: pointer;
-        border-top: solid 5px;
-        border-bottom: solid 5px;
-        border-color: ${({ theme }) => theme.colors.background};
+        background-color: ${({ $getThemeColor }) => $getThemeColor.secondary};
     }
 `;
