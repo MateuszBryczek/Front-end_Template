@@ -3,14 +3,13 @@ import {
     DropdownList,
 } from "./styled";
 
-const Dropdown = ({ sections, scrolltoSection }) => {
+const Dropdown = ({ sections, scrollToSection }) => {
     return (
         <DropdownList>
-            {sections.map((sectionId) => (
-                <DropdownItem key={sectionId} onClick={() => scrolltoSection(sectionId)}>
-                    {sectionId}
+            {sections.map(({ id, name }) => (
+                <DropdownItem key={id} onClick={() => scrollToSection(id)}>
+                    {name}
                 </DropdownItem>
-
             ))}
         </DropdownList>
     );
