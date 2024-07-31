@@ -8,6 +8,7 @@ export const Wrapper = styled.div`
 
 export const ArticleHeader = styled.h1`
     text-align: center;
+    font-family: 'Courier New', Courier, monospace;
 `;
 
 export const SectionHeader = styled.h2`
@@ -22,6 +23,7 @@ export const Article = styled.article`
     box-shadow: 0px 5px 24px 0px ;
     margin-left: 10px;
     margin-right: 10px;
+    margin-bottom: 75px;
     padding: 12px;
     padding-bottom: 52px;
     background-color: ${({ theme }) => theme.section.background};
@@ -36,12 +38,13 @@ export const ArticleWrapper = styled.div`
     grid-column: 2/3;
 `;
 
-export const Highlighted = styled.p`
+export const Highlighted = styled.span`
     display: inline;
     background-color: ${({ theme }) => theme.highlighted.background};
     color: ${({ theme }) => theme.highlighted.textPrimary};
     border-radius: 8px ;
     padding: 2px;
+    font-family: 'Courier New', Courier, monospace;
 `;
 
 export const Hint = styled.p`
