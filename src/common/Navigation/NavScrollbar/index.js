@@ -21,6 +21,8 @@ const NavScrollbar = () => {
             { id: "1", name: "Where to write" },
             { id: "2", name: "JS Output" },
             { id: "3", name: "JS Statements" },
+            { id: "4", name: "JS Syntax" },
+            { id: "5", name: "JS Variables" },
         ],
         "/JavaScript/Page2": 
         [
