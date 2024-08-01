@@ -8,9 +8,9 @@ import {
 } from "../../../../../common/Section";
 import CodeSpace from "../../../../CodeSpace/CodeSpace";
 
-export const JS_Syntax = () => (
+export const JavaScriptVariables = () => (
 <>
-    <ArticleHeader id="4">JavaScript Syntax</ArticleHeader>
+    <ArticleHeader id="5">JavaScript Syntax</ArticleHeader>
         <Article>
 
         </Article>

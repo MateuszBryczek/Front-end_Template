@@ -8,7 +8,7 @@ import {
 } from "../../../../../common/Section";
 import CodeSpace from "../../../../CodeSpace/CodeSpace";
 
-export const JS_Statements = () => (
+export const JavaScriptStatements = () => (
 <>
 <ArticleHeader id="3">JavaScript Statements</ArticleHeader>
         <Article>

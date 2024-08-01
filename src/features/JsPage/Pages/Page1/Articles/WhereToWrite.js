@@ -8,7 +8,7 @@ import {
 } from "../../../../../common/Section";
 import CodeSpace from "../../../../CodeSpace/CodeSpace";
 
-export const Where_to_write = () => (
+export const WhereToWrite = () => (
 <>
 <ArticleHeader id="1">Where to write</ArticleHeader>
         <Article>

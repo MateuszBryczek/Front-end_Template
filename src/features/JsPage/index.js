@@ -4,7 +4,7 @@ import NavScrollbar from "../../common/Navigation/NavScrollbar";
 import useThemeColor from "../useThemeColor/useThemeColor";
 import { Outlet } from "react-router-dom";
 import { Route, Routes } from "react-router-dom";
-import Page1 from "./Pages/Page1/JavaScript_Basics";
+import Page1 from "./Pages/Page1/JavaScriptBasics";
 import Page2 from "./Pages/Page2/Page2";
 
 const JsPage = () => {
