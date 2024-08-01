@@ -16,7 +16,7 @@ export const Page1 = () => (
         <Article>
             <SectionHeader>Writing JavaScript Code</SectionHeader>
 <Section>
-JavaScript codes should be writen inside the <Highlighted>&lt;script&gt;</Highlighted> element.
+JavaScript codes should be writen inside the <Highlighted>{`<script>`}</Highlighted> element.
 <CodeSpace>               
 {`
 1|<script>
@@ -28,15 +28,15 @@ JavaScript codes should be writen inside the <Highlighted>&lt;script&gt;</Highli
 Old JavaScript examples may use a type attribute: <b>&lt;script type="text/javascript"&gt;</b> .
 The type attribute is not required. JavaScript is the default scripting language in HTML.
 </Hint>
-But where you should put the <Highlighted>&lt;script&gt;</Highlighted> element? It can be either placen in the <Highlighted>&lt;head&gt;</Highlighted> , in the <Highlighted>&lt;body&gt;</Highlighted> or both.
+But where you should put the <Highlighted>{`<script>`}</Highlighted> element? It can be either placen in the <Highlighted>{`<head>`}</Highlighted> , in the <Highlighted>{`<body>`}</Highlighted> or both.
 </Section>
 
 <SectionHeader>What's the defference?</SectionHeader>
 <Section>
-When the <Highlighted>&lt;script&gt;</Highlighted> is inside <Highlighted>&lt;head&gt;</Highlighted> , it loads before the content of the page loads. But when it's inside the <Highlighted>&lt;body&gt;</Highlighted> , it loads after the content of the page loads.<br/>
-It is recommended to put the <Highlighted>&lt;script&gt;</Highlighted> tag in the body when using internal JavaScript.
+When the <Highlighted>{`<script>`}</Highlighted> is inside <Highlighted>{`<head>`}</Highlighted> , it loads before the content of the page loads. But when it's inside the <Highlighted>{`<body>`}</Highlighted> , it loads after the content of the page loads.<br/>
+It is recommended to put the <Highlighted>{`<script>`}</Highlighted> tag in the body when using internal JavaScript.
 <Hint>
-Placing scripts at the bottom of the <Highlighted>&lt;body&gt;</Highlighted> element improves the display speed, because script interpretation slows down the display.
+Placing scripts at the bottom of the <Highlighted>{`<body>`}</Highlighted> element improves the display speed, because script interpretation slows down the display.
 </Hint>
 </Section>
 
@@ -44,7 +44,7 @@ Placing scripts at the bottom of the <Highlighted>&lt;body&gt;</Highlighted> ele
 <Section>
 A JavaScript <b>function</b> is a block of JavaScript code, that can be executed when "called" for.<br/>
 For example, a function can be called when an event occurs, like when the user clicks a button.
-<p>In this example, a JavaScript <b>function</b> is placed in the <Highlighted>&lt;body&gt;</Highlighted> section of an HTML page. The function is invoked (called) when a button is clicked:</p>
+<p>In this example, a JavaScript <b>function</b> is placed in the <Highlighted>{`<body>`}</Highlighted> section of an HTML page. The function is invoked (called) when a button is clicked:</p>
 <CodeSpace>
 {`
  1|<!DOCTYPE html>
@@ -77,7 +77,7 @@ There will be much more about functions and events later.
 JavaScript can also be placed in <b>external files</b>.<br />
 External scripts are practical when the same code is used in many different web pages.<br/>
 JavaScript files have the file name extension  of <Highlighted>.js</Highlighted> .
-To use an external script, put the name of the script file in the <Highlighted>src</Highlighted> (source) attribute of a <Highlighted>&lt;script&gt;</Highlighted> tag:
+To use an external script, put the name of the script file in the <Highlighted>src</Highlighted> (source) attribute of a <Highlighted>{`<script>`}</Highlighted> tag:
 <CodeSpace>
 {`
  1|function myFunction() {
@@ -90,9 +90,9 @@ To use an external script, put the name of the script file in the <Highlighted>s
  1|<script src="myScript.js"></script>
 `}
 </CodeSpace>
-You can place an external script reference in <Highlighted>&lt;head&gt;</Highlighted> or <Highlighted>&lt;body&gt;</Highlighted> as you like.
+You can place an external script reference in <Highlighted>{`<head>`}</Highlighted> or <Highlighted>{`<body>`}</Highlighted> as you like.
 <Hint>
-External scripts <b>cannot</b> contain <Highlighted>&lt;script&gt;</Highlighted> tags.
+External scripts <b>cannot</b> contain <Highlighted>{`<script>`}</Highlighted> tags.
 </Hint>
 </Section>
 
@@ -190,10 +190,52 @@ You can skip the <Highlighted>window</Highlighted> keyword.
 
         <ArticleHeader id="3">JavaScript Statements</ArticleHeader>
         <Article>
-<SectionHeader></SectionHeader>
+<SectionHeader>JavaScript Statements</SectionHeader>
 <Section>
-
+<b>JavaScript programs</b> consist of <b>statements</b> with appropirate syntax.<br/>
+A single JavaScript <b>statement</b> may span a single or multiple lines.<br/>
+JavaScript <b>statements</b> scholuld be ended or be separated by <b>semicolons</b> <Highlighted>;</Highlighted> .
+<Hint>JavaScript programs (and JavaScript statements) are often called <b>JavaScript code</b>.</Hint>
+Examples of <b>single line</b> statements:
+<CodeSpace>
+{`
+ 1|document.getElementById("demo").innerHTML = "single line statement";
+`}
+</CodeSpace>
+<CodeSpace>
+{`
+ 1|document.getElementById("demo").innerHTML = 
+ 2|"multiple line statement";
+`}
+</CodeSpace>
+<Hint>
+If a JavaScript statement does not fit on one line, the best place to break it is after an operator.
+</Hint>
 </Section>
+
+<SectionHeader>JavaScript Code Block</SectionHeader>
+<Section>
+JavaScript statements can be grouped together in <b>code blocks</b>, inside <b>curly brackets</b> <Highlighted>{`{...}`}</Highlighted> .<br/>
+The purpose of code blocks is to define statements to be executed together.
+<CodeSpace>
+{`
+ 1|function myFunction() {
+ 2|  document.getElementById("demo1").innerHTML = "Hello World 1!";
+ 3|  document.getElementById("demo2").innerHTML = "Hello World 2!";
+ 4|}
+`}
+</CodeSpace>
+</Section>
+        </Article>
+
+        <ArticleHeader id="4">JavaScript Syntax</ArticleHeader>
+        <Article>
+
+        </Article>
+
+        <ArticleHeader id="5">JavaScript Variables</ArticleHeader>
+        <Article>
+
         </Article>
     </ArticleWrapper>
     </>
