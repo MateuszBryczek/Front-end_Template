@@ -29,10 +29,6 @@ const NavScrollbar = () => {
             { id: "1", name: "1" },
             { id: "2", name: "2" }
         ],
-        "/JavaScript/Page3": 
-        [
-            { id: "1", name: "1" },
-        ],
     };
 
     const currentPath = location.pathname;
@@ -62,13 +58,6 @@ const NavScrollbar = () => {
                         Page2
                     </StyledLink>
                     {currentPath === "/JavaScript/Page2" && (
-                        <Dropdown sections={currentSections} scrollToSection={scrollToSection} />
-                    )}
-
-                    <StyledLink to="/JavaScript/Page3" $getThemeColor={themeColor}>
-                        Page3
-                    </StyledLink>
-                    {currentPath === "/JavaScript/Page3" && (
                         <Dropdown sections={currentSections} scrollToSection={scrollToSection} />
                     )}
                 </>
