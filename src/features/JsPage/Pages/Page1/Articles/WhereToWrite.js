@@ -42,7 +42,8 @@ Placing scripts at the bottom of the <Highlighted>{`<body>`}</Highlighted> eleme
 <Section>
 A JavaScript <b>function</b> is a block of JavaScript code, that can be executed when "called" for.<br/>
 For example, a function can be called when an event occurs, like when the user clicks a button.
-<p>In this example, a JavaScript <b>function</b> is placed in the <Highlighted>{`<body>`}</Highlighted> section of an HTML page. The function is invoked (called) when a button is clicked:</p>
+<p />
+In this example, a JavaScript <b>function</b> is placed in the <Highlighted>{`<body>`}</Highlighted> section of an HTML page. The function is invoked (called) when a button is clicked:
 <CodeSpace>
 {`
  1|<!DOCTYPE html>
