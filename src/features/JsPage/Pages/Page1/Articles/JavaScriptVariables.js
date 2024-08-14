@@ -27,9 +27,9 @@ Variables are <b>containers</b> for <b>storing data</b>, and they can by declare
 In this example, <b>x</b> , <b>y</b> , and <b>sum</b> are <b>undeclared variables</b>. They are <b>automatically</b> declared when first used:
 <CodeSpace>
 {`
- 1|x = 5;
- 2|y = 10;
- 3|sum = x + y;
+x = 5;
+y = 10;
+sum = x + y;
 `}
 </CodeSpace>
 <Hint>
@@ -47,9 +47,9 @@ Variables declared with <Highlighted>var</Highlighted> :
 </ul>
 <CodeSpace>
 {`
- 1|var x = 5;
- 2|var y = 10;
- 3|var sum = x + y;
+var x = 5;
+var y = 10;
+var sum = x + y;
 `}
 </CodeSpace>
 <Hint>
@@ -69,9 +69,9 @@ Variables declared with <Highlighted>let</Highlighted> :
 </ul>
 <CodeSpace>
 {`
- 1|let x = 5;
- 2|let y = 10;
- 3|let sum = x + y;
+let x = 5;
+let y = 10;
+let sum = x + y;
 `}
 </CodeSpace>
 </Section>
@@ -86,11 +86,14 @@ Variables declared with <Highlighted>const</Highlighted> :
 </ul>
 <CodeSpace>
 {`
- 1|const x = 5;
- 2|const y = 10;
- 3|const sum = x + y;
+const x = 5; 
+const y = 10;
+const sum = x + y;
 `}
 </CodeSpace>
+<Hint>
+Always declare a variable with <Highlighted>const</Highlighted> when you know that the value should not be changed.
+</Hint>
 </Section>
 
 <SectionHeader>Global Scope and Block Scope</SectionHeader>
@@ -100,10 +103,6 @@ That means that variables declared with <Highlighted>var</Highlighted> inside a 
 <p />
 Variables declared with <Highlighted>let</Highlighted> and <Highlighted>const</Highlighted> keywords provided <b>Block Scope</b> in JavaScript, what is the complete opposite of <b>Global Scope</b>.<br />
 That means that variables declared inside a <Highlighted>{`{...}`}</Highlighted> block cannot be accessed from outside the block.
-</Section>
-<SectionHeader>Difference Between var, let and const</SectionHeader>
-<Section>
-
 </Section>
         </Article>
 </>

@@ -17,9 +17,9 @@ export const WhereToWrite = () => (
 JavaScript codes should be writen inside the <Highlighted>{`<script>`}</Highlighted> element.
 <CodeSpace>               
 {`
-1|<script>
-2|  console.log("Hello World!");
-3|<script>
+<script>
+  console.log("Hello World!");
+<script>
 `}
 </CodeSpace>
 <Hint>
@@ -46,24 +46,24 @@ For example, a function can be called when an event occurs, like when the user c
 In this example, a JavaScript <b>function</b> is placed in the <Highlighted>{`<body>`}</Highlighted> section of an HTML page. The function is invoked (called) when a button is clicked:
 <CodeSpace>
 {`
- 1|<!DOCTYPE html>
- 2|<html>
- 3|  <head>
- 4|    <title> Front-End_Template </title>
- 5|  </head>
- 6|
- 7|  <body>
- 8|    <h1>JavaScript Function Demo</h1>
- 9|
-10|    <p id="demo">A Paragraph</p>
-11|    <button type="button" onclick="myFunction()">Try it</button>
-12|    <script>
-13|      function myFunction() {
-14|        document.getElementById("demo").innerHTML = "Hello JavaScript!"
-15|      };
-16|    </script>
-17|  </body>
-18|</html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Front-End_Template </title>
+  </head>
+
+  <body>
+    <h1>JavaScript Function Demo</h1>
+
+    <p id="demo">A Paragraph</p>
+    <button type="button" onclick="myFunction()">Try it</button>
+    <script>
+      function myFunction() {
+        document.getElementById("demo").innerHTML = "Hello JavaScript!"
+      };
+    </script>
+  </body>
+</html>
 `}
 </CodeSpace>
 <Hint>
@@ -79,14 +79,14 @@ JavaScript files have the file name extension  of <Highlighted>.js</Highlighted>
 To use an external script, put the name of the script file in the <Highlighted>src</Highlighted> (source) attribute of a <Highlighted>{`<script>`}</Highlighted> tag:
 <CodeSpace>
 {`
- 1|function myFunction() {
- 2|    document.getElementById("demo").innerHTML = "Hello External JavaScript!"
- 3|  }
+function myFunction() {
+    document.getElementById("demo").innerHTML = "Hello External JavaScript!"
+  }
 `}
 </CodeSpace>
 <CodeSpace>
 {`
- 1|<script src="myScript.js"></script>
+<script src="myScript.js"></script>
 `}
 </CodeSpace>
 You can place an external script reference in <Highlighted>{`<head>`}</Highlighted> or <Highlighted>{`<body>`}</Highlighted> as you like.
