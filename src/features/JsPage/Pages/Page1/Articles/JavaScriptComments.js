@@ -31,11 +31,18 @@ Multi-line comments start with <Highlighted>/*</Highlighted> and end with <Highl
 Any text between <Highlighted>/*...*/</Highlighted> will be ignored by JavaScript.
 <CodeSpace>
 {`
-/*comment
-
+/* 
+  comment.
+  declare x and give it the value 5
+  declare y and give it the value x + 10
 */
+let x = 5;
+let y = x + 10;
 `}
 </CodeSpace>
+<Hint>
+It is most common to use single line comments. Block comments are often used for formal documentation.
+</Hint>
 </Section>
         </Article>
 </>
