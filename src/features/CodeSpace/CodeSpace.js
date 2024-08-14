@@ -1,19 +1,18 @@
 import PropTypes from 'prop-types';
 import { useTheme } from 'styled-components';
-import { StyledCodeSpace } from './styled'
+import { StyledCodeSpace, LineNumber, CodeLine } from './styled'
 
 const CodeSpace = ({ children }) => {
     const theme = useTheme();
 
   const keywordGroups = {
-    
     Yellow: ['[a-zA-Z0-9]+\\(\\)'],
     Purple: ['function', 'return', 'if', 'else', 'for', 'while', '{', '}', '\\(', '\\)'],
     Orange: ['".*?"', "'.*?'"],
     LightBlue: ['!DOCTYPE html', 'id', 'type', 'onclick', 'document', 'src'],
     Blue: ['var', 'let', 'const', 'script', 'head', 'body', 'html', 'h1', 'h2', 'h3', '\\bp\\b', 'button', 'title'],
-    Green: [],
-    Grey: ['[0-9]+\\|', '<', '>', '/'],
+    Green: ['//.*', '/\\*[^]*?\\*/'], // make /* */ work properly
+    Grey: ['<', '>', '/'],
   };
 
   const buildRegex = () => {
@@ -46,25 +45,29 @@ const CodeSpace = ({ children }) => {
     return null;
   };
 
-  const lines = children.split('\n');
+  const lines = children.split('\n').filter(line => line.trim() !== '');;
 
   return (
     <StyledCodeSpace>
       {lines.map((line, lineIndex) => {
         const segments = splitText(line);
+        const lineNumber = lineIndex + 1;
 
         return (
           <div key={lineIndex}>
-            {segments.map((segment, index) => {
-              const category = getCategory(segment);
-              const color = colors[category] || colors.default;
+            <LineNumber>{lineNumber}|</LineNumber>
+            <CodeLine>
+              {segments.map((segment, index) => {
+                const category = getCategory(segment);
+                const color = colors[category] || colors.default;
               
-              return (
-                <span key={index} style={{ color }}>
-                  {segment}
-                </span>
-              );
-            })}
+                return (
+                  <span key={index} style={{ color }}>
+                    {segment}
+                  </span>
+                );
+              })}
+            </CodeLine>
           </div>
         );
       })}

@@ -4,8 +4,10 @@ import { JavaScriptOutput } from "./Articles/JavaScriptOutput";
 import { JavaScriptStatements } from "./Articles/JavaScriptStatements";
 import { JavaScriptSyntax } from "./Articles/JavaScriptSyntax";
 import { JavaScriptVariables } from "./Articles/JavaScriptVariables";
+import { JavaScriptComments } from "./Articles/JavaScriptComments";
+import { JavaScriptOperators } from "./Articles/JavaScriptOperators";
 
-export const JavaScript_Basics = () => (
+export const JavaScriptBasics = () => (
     <>
     <ArticleWrapper>
         <WhereToWrite />
@@ -13,8 +15,10 @@ export const JavaScript_Basics = () => (
         <JavaScriptStatements />
         <JavaScriptSyntax />
         <JavaScriptVariables />
+        <JavaScriptComments />
+        <JavaScriptOperators />
     </ArticleWrapper>
     </>
 );
 
-export default JavaScript_Basics;
+export default JavaScriptBasics;

@@ -23,6 +23,8 @@ const NavScrollbar = () => {
             { id: "3", name: "JS Statements" },
             { id: "4", name: "JS Syntax" },
             { id: "5", name: "JS Variables" },
+            { id: "6", name: "JS Comments" },
+            { id: "7", name: "JS Operators" },
         ],
         "/JavaScript/Page2": 
         [

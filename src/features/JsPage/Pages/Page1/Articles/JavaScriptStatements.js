@@ -21,13 +21,13 @@ JavaScript <b>statements</b> scholuld be ended or be separated by <b>semicolons<
 Examples of <b>single line</b> statements:
 <CodeSpace>
 {`
- 1|document.getElementById("demo").innerHTML = "single line statement";
+document.getElementById("demo").innerHTML = "single line statement";
 `}
 </CodeSpace>
 <CodeSpace>
 {`
- 1|document.getElementById("demo").innerHTML = 
- 2|"multiple line statement";
+document.getElementById("demo").innerHTML = 
+"multiple line statement";
 `}
 </CodeSpace>
 <Hint>
@@ -41,10 +41,10 @@ JavaScript statements can be grouped together in <b>code blocks</b>, inside <b>c
 The purpose of code blocks is to define statements to be executed together.
 <CodeSpace>
 {`
- 1|function myFunction() {
- 2|  document.getElementById("demo1").innerHTML = "Hello World 1!";
- 3|  document.getElementById("demo2").innerHTML = "Hello World 2!";
- 4|}
+function myFunction() {
+  document.getElementById("demo1").innerHTML = "Hello World 1!";
+  document.getElementById("demo2").innerHTML = "Hello World 2!";
+}
 `}
 </CodeSpace>
 </Section>
