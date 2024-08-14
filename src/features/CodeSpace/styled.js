@@ -19,7 +19,7 @@ export const LineNumber = styled.span`
   width: 45px;
   text-align: right;
   padding-right: 10px;
-  color: grey;
+  color: ${({ theme }) => theme.CodeSpace.Grey};
   user-select: none;
 `;
 
