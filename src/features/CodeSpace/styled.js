@@ -11,7 +11,6 @@ export const StyledCodeSpace = styled.pre`
   margin-left: 5px;
   margin-right: 5px;
   box-shadow: 0px 5px 24px 0px black;
-  position: relative;
 `;
 
 export const LineNumber = styled.span`
