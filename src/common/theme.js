@@ -60,7 +60,6 @@ jsPage: {
   navPrimary: colorNames.SweetCorn,
   navSecondary: colorNames.Drover,
   header: colorNames.RipeLemon,
-
 },
 section: {
   background: colorNames.Whisper,
@@ -73,6 +72,11 @@ highlighted: {
 },
 hint: {
   background: colorNames.Silver,
+},
+table: {
+border: colorNames.Silver,
+primary: colorNames.Whisper,
+secondary: colorNames.Silver,
 },
 CodeSpace: {
   background: colorNames.Woodsmoke,
