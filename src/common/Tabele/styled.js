@@ -9,6 +9,7 @@ export const StyledTable = styled.table`
     margin-top: 18px;
     margin-bottom: 18px;
     box-shadow: 0px 5px 24px 0px;
+    table-layout: fixed;
 `;
 
 export const StyledTh = styled.th`
