@@ -7,18 +7,17 @@ import {
     Hint,
 } from "../../../../../common/Section";
 import Table from "../../../../../common/Tabele";
-import CodeSpace from "../../../../CodeSpace/CodeSpace";
 
-const arithmeticColumns = ['Operator', 'Description', 'Example'];
+const arithmeticColumns = ['Name', 'Operator', 'Example'];
 const arithmeticData = [
-    { Operator: '+', Description: 'Addition', Example: 'x + y' },
-    { Operator: '-', Description: 'Subtraction', Example: 'x - y' },
-    { Operator: '*', Description: 'Multiplication', Example: 'x * y' },
-    { Operator: '**', Description: 'Exponentiation', Example: 'x ** y' },
-    { Operator: '/', Description: 'Division', Example: 'x / y' },
-    { Operator: '%', Description: 'Modulus', Example: 'x % y' },
-    { Operator: '++', Description: 'Increment', Example: 'x ++' },
-    { Operator: '--', Description: 'Decrement', Example: 'x --' },
+    { Operator: '+', Name: 'Addition', Example: 'x + y' },
+    { Operator: '-', Name: 'Subtraction', Example: 'x - y' },
+    { Operator: '*', Name: 'Multiplication', Example: 'x * y' },
+    { Operator: '**', Name: 'Exponentiation', Example: 'x ** y' },
+    { Operator: '/', Name: 'Division', Example: 'x / y' },
+    { Operator: '%', Name: 'Modulus', Example: 'x % y' },
+    { Operator: '++', Name: 'Increment', Example: 'x ++' },
+    { Operator: '--', Name: 'Decrement', Example: 'x --' },
 ];
 const assignmentColumns = ['Operator', 'Same As', 'Example'];
 const assignmentData = [
@@ -48,16 +47,16 @@ const logicalAssignmentData = [
     { Operator: '||=', 'Same As': 'x = x || (x = y)', Example: 'x ||= y' },
     { Operator: '??=', 'Same As': 'x = x ?? (x = y)', Example: 'x ??= y' },
 ];
-const comparisonColumns = ['Operator', 'Description', 'Example'];
+const comparisonColumns = ['Name', 'Operator', 'Example'];
 const comparisonData = [
-    { Operator: '==', Description: 'Equality', Example: 'x == y' },
-    { Operator: '!=', Description: 'Inequality', Example: 'x != y' },
-    { Operator: '===', Description: 'Identity', Example: 'x === y' },
-    { Operator: '!==', Description: 'Non-identity', Example: 'x !== y' },
-    { Operator: '>', Description: 'Greater tnan operator', Example: 'x > y' },
-    { Operator: '>=', Description: 'Greater tnan or equal', Example: 'x >= y' },
-    { Operator: '<', Description: 'Less than', Example: 'x < y' },
-    { Operator: '<=', Description: 'Less than or equal', Example: 'x <= y' },
+    { Name: 'Equality', Operator: '==', Example: 'x == y' },
+    { Name: 'Inequality', Operator: '!=', Example: 'x != y' },
+    { Name: 'Identity', Operator: '===',Example: 'x === y' },
+    { Name: 'Non-identity', Operator: '!==', Example: 'x !== y' },
+    { Name: 'Greater tnan operator', Operator: '>', Example: 'x > y' },
+    { Name: 'Greater tnan or equal', Operator: '>=', Example: 'x >= y' },
+    { Name: 'Less than', Operator: '<', Example: 'x < y' },
+    { Name: 'Less than or equal', Operator: '<=', Example: 'x <= y' },
 ];
 const logicalColumns = ['Name', 'Operator', 'Usage'];
 const logicalData = [
@@ -67,10 +66,10 @@ const logicalData = [
 ];
 const bitwiseColumns = ['Name', 'Operator', 'Usage'];
 const bitwiseData = [
-    { Name: 'AND', Operator: '&', Usage: '' },
-    { Name: 'OR', Operator: '|', Usage: '' },
-    { Name: 'XOR', Operator: '^', Usage: '' },
-    { Name: 'NOT', Operator: '~', Usage: '' },
+    { Name: 'AND', Operator: '&', Usage: 'return 1 if both are 1' },
+    { Name: 'OR', Operator: '|', Usage: 'return 1 if either is 1' },
+    { Name: 'XOR', Operator: '^', Usage: 'return 1 if they are different' },
+    { Name: 'NOT', Operator: '~', Usage: 'return inverted value' },
 ];
 
 export const JavaScriptOperators = () => (
@@ -122,7 +121,7 @@ A <b>comparison operator</b> used to compare strings, numbers, Booleans, or obje
 
 <SectionHeader>JavaScript Bitwise Operators</SectionHeader>
 <Section>
-<b>Logical operators</b> are commonly used with <b>Booleans</b>. Returns a <b>Boolean</b> value ( true or false).
+<b>Bitwise operators</b> treat their operands as a <b>binary code</b> (zeros and ones) instead of numbers. Returns <b>numerical values</b>.
 <Table columns={bitwiseColumns} data={bitwiseData}/>
 </Section>
         </Article>
