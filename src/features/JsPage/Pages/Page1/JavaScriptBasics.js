@@ -6,6 +6,7 @@ import { JavaScriptSyntax } from "./Articles/JavaScriptSyntax";
 import { JavaScriptVariables } from "./Articles/JavaScriptVariables";
 import { JavaScriptComments } from "./Articles/JavaScriptComments";
 import { JavaScriptOperators } from "./Articles/JavaScriptOperators";
+import { JavaScriptDataTypes } from "./Articles/JavaScriptDataTypes";
 
 export const JavaScriptBasics = () => (
     <>
@@ -17,6 +18,7 @@ export const JavaScriptBasics = () => (
         <JavaScriptVariables />
         <JavaScriptComments />
         <JavaScriptOperators />
+        <JavaScriptDataTypes />
     </ArticleWrapper>
     </>
 );
