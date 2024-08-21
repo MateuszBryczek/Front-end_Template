@@ -28,13 +28,13 @@ In JavaScript there are 4 ways of display output:
 By using the <Highlighted>innerHTML</Highlighted> we can change the content or text of the selected element.
 <CodeSpace>
 {`
- 1|function myFunction() {
- 2|  const x = 5;
- 3|  const y = 5;
- 4|  const sum = x + y;
- 5|
- 6|  document.getElementById("demo").innerHTML = sum;
- 7|}
+function myFunction() {
+  const x = 5;
+  const y = 5;
+  const sum = x + y;
+
+  document.getElementById("demo").innerHTML = sum;
+}
 `}
 </CodeSpace>
 </Section>
@@ -43,11 +43,11 @@ By using the <Highlighted>innerHTML</Highlighted> we can change the content or t
 By using the <Highlighted>console.log()</Highlighted> funtion, we can write into the browser's developer console.
 <CodeSpace>
 {`
- 1|const x = 5;
- 2|const y = 5;
- 3|const sum = x + y;
- 4|
- 5|console.log(sum);
+const x = 5;
+const y = 5;
+const sum = x + y;
+
+console.log(sum);
 `}
 </CodeSpace>
 <Hint><Highlighted>console.log()</Highlighted> can be very healpfull during <b>debugging</b> proces</Hint>
@@ -57,13 +57,13 @@ By using the <Highlighted>console.log()</Highlighted> funtion, we can write into
 By using the <Highlighted>document.write()</Highlighted> function, we can write ti the content of the document.
 <CodeSpace>
 {`
- 1|function myFunction() {
- 2|  const x = 5;
- 3|  const y = 5;
- 4|  const sum = x + y;
- 5|
- 6|  document.write(sum);
- 7|}
+function myFunction() {
+  const x = 5;
+  const y = 5;
+  const sum = x + y;
+
+  document.write(sum);
+}
 `}
 </CodeSpace>
 <Hint>Using <Highlighted>document.write()</Highlighted> after an HTML document is loaded, will <b>delete all existing HTML</b> in the current page! This method should only be used for testing.</Hint>
@@ -75,13 +75,13 @@ By using <Highlighted>window.alert()</Highlighted> function, we can output data 
 You can skip the <Highlighted>window</Highlighted> keyword.
 <CodeSpace>
 {`
- 1|function myFunction() {
- 2|  const x = 5;
- 3|  const y = 5;
- 4|  const sum = x + y;
- 5|
- 6|  alert(sum);
- 7|}
+function myFunction() {
+  const x = 5;
+  const y = 5;
+  const sum = x + y;
+
+  alert(sum);
+}
 `}
 </CodeSpace>
 <Hint>In JavaScript, the <b>window</b> object is the <b>global scope object</b>. This means that variables, properties, and methods by default belong to the window object.</Hint>

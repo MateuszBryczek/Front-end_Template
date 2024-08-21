@@ -24,8 +24,8 @@ JavaScript used the keywords <Highlighted>var</Highlighted> , <Highlighted>let</
 An <b>equal sign</b> <Highlighted>=</Highlighted> is used to <b>assign values</b> to varables.
 <CodeSpace>
 {`
- 1|let number = 5;
- 2|document.write(number);
+let number = 5;
+document.write(number);
 `}
 </CodeSpace>
 </Section>
@@ -35,11 +35,11 @@ An <b>equal sign</b> <Highlighted>=</Highlighted> is used to <b>assign values</b
 JavaScript identifiers are sensitively cased.
 <CodeSpace>
 {`
- 1|let number = 5;
- 2|let Number = 10;
- 3|
- 4|let sum = number = Number;
- 5|document.write(sum);
+let number = 5;
+let Number = 10;
+
+let sum = number = Number;
+document.write(sum);
 `}
 </CodeSpace>
 In this example, the variables are <b>different</b>.
