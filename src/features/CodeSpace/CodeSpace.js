@@ -45,11 +45,15 @@ const CodeSpace = ({ children }) => {
     return null;
   };
 
-  const lines = children.split('\n').filter(line => line.trim() !== '');;
+    const lines = children.split('\n');
+    const trimmedLines = lines.slice(
+      lines.findIndex(line => line.trim() !== ''),
+      lines.length - [...lines].reverse().findIndex(line => line.trim() !== '')
+    );
 
   return (
     <StyledCodeSpace>
-      {lines.map((line, lineIndex) => {
+      {trimmedLines.map((line, lineIndex) => {
         const segments = splitText(line);
         const lineNumber = lineIndex + 1;
 
