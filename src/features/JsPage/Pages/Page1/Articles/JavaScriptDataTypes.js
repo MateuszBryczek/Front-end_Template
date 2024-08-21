@@ -93,20 +93,45 @@ const person = {
 };
 `}
 </CodeSpace>
+<Hint>The <Highlighted>this</Highlighted> keyword refers to the current object.</Hint>
 </Section>
 
 <SectionHeader>Accessing Object's Properties</SectionHeader>
 <Section>
-You can use a <b>dot</b> <Highlighted>.</Highlighted> or <b>square brackets</b> <Highlighted>[...]</Highlighted> to access an obejct.
+You can use a <b>dot</b> <Highlighted>.</Highlighted> 
 <CodeSpace>
 {`
 person.name;
 person.age;
 person.hobbies[0];
-
+`}
+</CodeSpace>
+Or <b>square brackets</b> <Highlighted>[...]</Highlighted> to access an obejct.
+<CodeSpace>
+{`
 person["name"];
 person["age"];
 person[hobbies][0];
+`}
+</CodeSpace>
+</Section>
+<SectionHeader>An Object In An Object</SectionHeader>
+<Section>
+You can put objects inside an object.
+<CodeSpace>
+{`
+const fruits = {
+  apple: {
+    color: "red",
+    taste: "sweet"
+  },
+  lemon: {
+    color: "yellow",
+    taste: "sour"
+  }
+}
+
+document.write(fruits.apple.red);
 `}
 </CodeSpace>
 </Section>
