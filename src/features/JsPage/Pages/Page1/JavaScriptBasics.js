@@ -7,6 +7,7 @@ import { JavaScriptVariables } from "./Articles/JavaScriptVariables";
 import { JavaScriptComments } from "./Articles/JavaScriptComments";
 import { JavaScriptOperators } from "./Articles/JavaScriptOperators";
 import { JavaScriptDataTypes } from "./Articles/JavaScriptDataTypes";
+import { JavaScriptFunctions } from "./Articles/JavaScriptFunctions";
 
 export const JavaScriptBasics = () => (
     <>
@@ -19,6 +20,7 @@ export const JavaScriptBasics = () => (
         <JavaScriptComments />
         <JavaScriptOperators />
         <JavaScriptDataTypes />
+        <JavaScriptFunctions />
     </ArticleWrapper>
     </>
 );
