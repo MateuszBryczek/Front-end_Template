@@ -6,12 +6,12 @@ const CodeSpace = ({ children }) => {
     const theme = useTheme();
 
   const keywordGroups = {
+    Green: ['//.*', '/\\*[^]*?\\*/'], // make /* */ work properly
     Yellow: ['[a-zA-Z0-9]+\\(\\)'],
     Purple: ['function', 'return', 'if', 'else', 'for', 'while', '{', '}', '\\(', '\\)'],
     Orange: ['".*?"', "'.*?'"],
+    Blue: ['var', 'let', 'const', 'script', 'head', 'body', 'html', 'h1', 'h2', 'h3', '\\bp\\b', 'button', 'title', 'typeof'],
     LightBlue: ['!DOCTYPE html', 'id', 'type', 'onclick', 'document', 'src'],
-    Blue: ['var', 'let', 'const', 'script', 'head', 'body', 'html', 'h1', 'h2', 'h3', '\\bp\\b', 'button', 'title'],
-    Green: ['//.*', '/\\*[^]*?\\*/'], // make /* */ work properly
     Grey: ['<', '>', '/'],
   };
 
