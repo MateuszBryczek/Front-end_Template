@@ -8,6 +8,7 @@ import { JavaScriptComments } from "./Articles/JavaScriptComments";
 import { JavaScriptOperators } from "./Articles/JavaScriptOperators";
 import { JavaScriptDataTypes } from "./Articles/JavaScriptDataTypes";
 import { JavaScriptFunctions } from "./Articles/JavaScriptFunctions";
+import { JavaScriptEvents } from "./Articles/JavaScriptEvents";
 
 export const JavaScriptBasics = () => (
     <>
@@ -21,6 +22,7 @@ export const JavaScriptBasics = () => (
         <JavaScriptOperators />
         <JavaScriptDataTypes />
         <JavaScriptFunctions />
+        <JavaScriptEvents />
     </ArticleWrapper>
     </>
 );
