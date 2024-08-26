@@ -59,7 +59,7 @@ let y = false;
 
 <SectionHeader>JavaScript Object</SectionHeader>
 <Section>
-An <b>Object</b> is a collection of related data and/or functionality.
+An <b>Object</b> is a collection of related data and/or functionality, they are written with <b>curly braces</b> <Highlighted>{`{...}`}</Highlighted>.
 <CodeSpace>
 {`
 const person ={
@@ -73,6 +73,9 @@ const person ={
 </CodeSpace>
 The <Highlighted>person</Highlighted> <b>object</b> contains <b>properties</b> thats are separated by <b>commas</b> <Highlighted>,</Highlighted> .<br />
 The <b>name</b> and <b>value</b> are separated by a colon <Highlighted>:</Highlighted> .
+<p />
+JavaScript <b>arrays</b> are written with <b>square brackets</b> <Highlighted>[...]</Highlighted> and separated by <b>comas</b> <Highlighted>,</Highlighted>.
+<Hint>Array indexes are <b>zero-based</b>, which means the first item is [0], second is [1], and so on.</Hint>
 </Section>
 
 <SectionHeader>Methods in an Object</SectionHeader>
@@ -134,6 +137,32 @@ const fruits = {
 document.write(fruits.apple.red);
 `}
 </CodeSpace>
+</Section>
+
+<SectionHeader>The typeof Operator</SectionHeader>
+<Section>
+You can use the JavaScript <Highlighted>typeof</Highlighted> operator to find the type of a variable.
+<CodeSpace>
+{`
+typeof "Bob Code"  //returns "string"
+typeof 10          //returns "number"
+`}
+</CodeSpace>
+</Section>
+
+<SectionHeader>JavaScript BigInt</SectionHeader>
+<Section>
+All JavaScript numbers are stored in a 64-bit floating-point format.<br />
+<b>BigInt</b> can be used to store integer values that are too big to be represented by a normal JavaScript Number.
+<CodeSpace>
+{`
+let x = BigInt("123456789012345678901234567890");
+`}
+</CodeSpace>
+<Hint>
+A <b>BigInt</b> can not have decimals.<br />
+You <b>cannot</b> perform math between a BigInt type and a Number type.
+</Hint>
 </Section>
         </Article>
 </>

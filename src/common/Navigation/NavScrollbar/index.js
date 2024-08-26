@@ -26,6 +26,8 @@ const NavScrollbar = () => {
             { id: "6", name: "JS Comments" },
             { id: "7", name: "JS Operators" },
             { id: "8", name: "JS Data Types" },
+            { id: "9", name: "JS Functions" },
+            { id: "10", name: "JS Events" },
         ],
         "/JavaScript/Page2": 
         [
