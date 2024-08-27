@@ -7,6 +7,18 @@ import {
     Hint,
 } from "../../../../../common/Section";
 import CodeSpace from "../../../../CodeSpace/CodeSpace";
+import Table from "../../../../../common/Tabele";
+
+const commonEventsColumns = ['Event', 'Description'];
+const commonEventsData = [
+    {Event: "onchange", Description: "Event occurs when the value of an HTML element is changed"},
+    {Event: "onclick", Description: "Event occurs when the user clicks on an HTML element"},
+    {Event: "onmouseover", Description: "Event occurs when the mouse pointer enters an element"},
+    {Event: "onmouseout", Description: " Event occurs when the mouse pointer moves out of an element"},
+    {Event: "onkeydown", Description: "Event occurs when the user presses a key on the keyboard"},
+    {Event: "onload", Description: "Event occurs when an object has been loaded"}
+];
+
 
 export const JavaScriptEvents = () => (
 <>
@@ -48,6 +60,12 @@ event.addEventListener("click", function() {
 });
 `}
 </CodeSpace>
+</Section>
+
+<SectionHeader>Common HTML Events</SectionHeader>
+<Section>
+<Table columns={commonEventsColumns} data={commonEventsData}/>
+<b>Full Events List:</b> //add link later
 </Section>
     </Article>
 </>
