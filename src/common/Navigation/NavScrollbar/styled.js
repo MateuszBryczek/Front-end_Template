@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
 export const Wrapper = styled.nav`
-    width: 180px;
+    width: 200px;
     height: 100%;
     margin-left: 5px;
     grid-column: 1;
