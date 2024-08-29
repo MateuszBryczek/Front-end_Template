@@ -31,7 +31,7 @@ const NavScrollbar = () => {
         ],
         "/JavaScript/Page2": 
         [
-            { id: "1", name: "1" },
+            { id: "1", name: "JS Strings" },
             { id: "2", name: "2" }
         ],
     };
@@ -60,7 +60,7 @@ const NavScrollbar = () => {
                     )}
 
                     <StyledLink to="/JavaScript/Page2" $getThemeColor={themeColor}>
-                        Page2
+                       Js More On Data Types 
                     </StyledLink>
                     {currentPath === "/JavaScript/Page2" && (
                         <Dropdown sections={currentSections} scrollToSection={scrollToSection} />
