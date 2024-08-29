@@ -43,9 +43,9 @@ To <b>escape characters</b>, use a <b>backslash</b> <Highlighted>\</Highlighted>
 It helps us make sure that our string are recognized as pieces of text, not a part of the code.
 <CodeSpace>
 {`
-const str1 = "We are the so-called \"Vikings\" from the north.";
-const str2 = 'It\'s alright.';
-const str3 = "The character \\ is called backslash.";
+const str1 = "We are the so-called \\"Vikings\\" from the north.";
+const str2 = 'It\\'s alright.';
+const str3 = "The character \\\\ is called backslash.";
 `}
 </CodeSpace>
 <Hint>
