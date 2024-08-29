@@ -9,7 +9,7 @@ const CodeSpace = ({ children }) => {
     Green: ['//.*', '/\\*[^]*?\\*/'], // make /* */ work properly
     Purple: ['function', 'return', 'if', 'else', 'for', 'while', '{', '}', '\\(', '\\)'],
     Yellow: ['[a-zA-Z0-9]+\\(\\)', 'getElementById', 'addEventListener', 'alert'],
-    Orange: ['".*?"', "'.*?'"],
+    Orange: ['".*?"', '"', "'.*?'", "'", '\\\\', 'Vikings', 's alright.'],
     Blue: ['var', 'let', 'const', 'script', 'head', 'body', 'html', 'h1', 'h2', 'h3', '\\bp\\b', 'button', 'title', 'typeof'],
     LightBlue: ['!DOCTYPE html', 'id', 'type', 'onclick', 'document', 'src'],
     Grey: ['<', '>', '/'],
