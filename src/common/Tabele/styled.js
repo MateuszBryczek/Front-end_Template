@@ -22,7 +22,7 @@ export const StyledTh = styled.th`
 export const StyledTd = styled.td`
     border: 1px solid;
     border-color: ${({theme}) => theme.table.border};
-    padding: 4px;
+    padding: 8px;
 `;
 
 export const StyledTr = styled.tr`
