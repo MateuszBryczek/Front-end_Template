@@ -32,7 +32,7 @@ const NavScrollbar = () => {
         "/JavaScript/Page2": 
         [
             { id: "1", name: "JS Strings" },
-            { id: "2", name: "2" }
+            { id: "2", name: "JS Number" }
         ],
     };
 
