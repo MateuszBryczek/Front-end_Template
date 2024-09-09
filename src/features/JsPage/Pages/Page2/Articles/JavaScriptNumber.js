@@ -46,7 +46,6 @@ export const JavaScriptNumber = () => (
 <Section>
 <Table columns={javaScriptNumberPropertiesColumns} data={javaScriptNumberPropertieData}/>
 </Section>
-
     </Article>
 </>
 );
