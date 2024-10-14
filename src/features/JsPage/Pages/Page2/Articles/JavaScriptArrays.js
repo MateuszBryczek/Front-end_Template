@@ -32,13 +32,28 @@ const arrayData = [
 
 const arraySearchColumn = ["Name", "Usage", "Output"];
 const arraySearchData = [
-    {Name: "Array indexOf()", Usage: "array.;", Output: ""},
-    {Name: "Array lastIndexOf()", Usage: "array.;", Output: ""},
-    {Name: "Array includes()", Usage: "array.;", Output: ""},
-    {Name: "Array find()", Usage: "array.;", Output: ""},
-    {Name: "Array findIndex()", Usage: "array.;", Output: ""},
-    {Name: "Array findLast()", Usage: "array.;", Output: ""},
-    {Name: "Array findLastIndex()", Usage: "array.;", Output: ""},
+    {Name: "Array indexOf()", Usage: 'array.indexOf("text");', Output: 'Returns index of "text" element'},
+    {Name: "Array lastIndexOf()", Usage: 'array.lastIndexOf("text");', Output: 'Returns index of the las "text" element'},
+    {Name: "Array includes()", Usage: 'array.includes("text");', Output: 'Check if array contain "text" and return boolean'},
+    {Name: "Array find()", Usage: "array.find(function);", Output: "Returns the value of the first array element that passes a test function"},
+    {Name: "Array findIndex()", Usage: "array.findIndex(function);", Output: "Returns the index of the first array element that passes a test function"},
+    {Name: "Array findLast()", Usage: "array.findLast(x => x > y);", Output: "Returns the value of the first element that satisfies a condition"},
+    {Name: "Array findLastIndex()", Usage: "array.findLastIndex(x => x > y);", Output: "Returns the index of the last element that satisfies a condition"},
+];
+
+const arraySortColumn = ["Name", "Usage", "Output"];
+const arraySortData = [
+    {Name: "Array sort()", Usage: "array.;", Output: ""},
+    {Name: "Array sort()", Usage: "array.;", Output: ""},
+    {Name: "Array sort()", Usage: "array.;", Output: ""},
+    {Name: "Array sort()", Usage: "array.;", Output: ""},
+    {Name: "Array sort()", Usage: "array.;", Output: ""},
+    {Name: "Array sort()", Usage: "array.;", Output: ""},
+    {Name: "Array sort()", Usage: "array.;", Output: ""},
+    {Name: "Array sort()", Usage: "array.;", Output: ""},
+    {Name: "Array sort()", Usage: "array.;", Output: ""},
+    {Name: "Array sort()", Usage: "array.;", Output: ""},
+    {Name: "Array sort()", Usage: "array.;", Output: ""},
 ];
 
 export const JavaScriptArrays = () => (
@@ -88,6 +103,11 @@ fruits[0] = "Lemon";
 <SectionHeader>JavaScript Array Search Methods</SectionHeader>
 <Section>
 <Table columns={arraySearchColumn} data={arraySearchData}/>
+</Section>
+
+<SectionHeader>JavaScript Array Sort Methods</SectionHeader>
+<Section>
+<Table columns={arraySortColumn} data={arraySortData}/>
 </Section>
     </Article>
 </>
