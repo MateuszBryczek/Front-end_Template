@@ -43,17 +43,10 @@ const arraySearchData = [
 
 const arraySortColumn = ["Name", "Usage", "Output"];
 const arraySortData = [
-    {Name: "Array sort()", Usage: "array.;", Output: ""},
-    {Name: "Array sort()", Usage: "array.;", Output: ""},
-    {Name: "Array sort()", Usage: "array.;", Output: ""},
-    {Name: "Array sort()", Usage: "array.;", Output: ""},
-    {Name: "Array sort()", Usage: "array.;", Output: ""},
-    {Name: "Array sort()", Usage: "array.;", Output: ""},
-    {Name: "Array sort()", Usage: "array.;", Output: ""},
-    {Name: "Array sort()", Usage: "array.;", Output: ""},
-    {Name: "Array sort()", Usage: "array.;", Output: ""},
-    {Name: "Array sort()", Usage: "array.;", Output: ""},
-    {Name: "Array sort()", Usage: "array.;", Output: ""},
+    {Name: "Array sort()", Usage: "array.sort();", Output: "Sorts an array alphabetically"},
+    {Name: "Array reverse()", Usage: "array.reverse();", Output: "Reverses the elements in an array"},
+    {Name: "Array toSorted()", Usage: "array.toSorted();", Output: "New array sorted alphabetically"},
+    {Name: "Array toReversed()", Usage: "array.toReversed();", Output: "New array with reversed elements"},
 ];
 
 export const JavaScriptArrays = () => (

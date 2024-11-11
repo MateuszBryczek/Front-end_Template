@@ -5,7 +5,7 @@ import useThemeColor from "../useThemeColor/useThemeColor";
 import { Outlet } from "react-router-dom";
 import { Route, Routes } from "react-router-dom";
 import Page1 from "./Pages/Page1/JavaScriptBasics";
-import Page2 from "./Pages/Page2/Page2";
+import Page2 from "./Pages/Page2/JavaScriptMoreOnDataTypes";
 
 const JsPage = () => {
     const themeColor = useThemeColor();
@@ -17,7 +17,7 @@ const JsPage = () => {
         <Header $getThemeColor={ themeColor }>JavaScript</Header>
             <Routes>
                 <Route path="JavaScriptBasics" element={<Page1 />} />
-                <Route path="Page2" element={<Page2 />} />
+                <Route path="JavaScriptMoreOnDataTypes" element={<Page2 />} />
             </Routes>
             <Outlet />
     </Wrapper>

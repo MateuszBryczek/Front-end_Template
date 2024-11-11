@@ -3,7 +3,7 @@ import { JavaScriptArrays } from "./Articles/JavaScriptArrays";
 import { JavaScriptNumber } from "./Articles/JavaScriptNumber";
 import { JavaScriptStrings } from "./Articles/JavaScriptStrings";
 
-export const Page2 = () => (
+export const JavaScriptMoreOnDataTypes = () => (
     <>
     <ArticleWrapper>
         <JavaScriptStrings />
@@ -13,4 +13,4 @@ export const Page2 = () => (
     </>
 );
 
-export default Page2;
+export default JavaScriptMoreOnDataTypes;

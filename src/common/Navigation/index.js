@@ -26,7 +26,7 @@ const Navigation = () => {
             <StyledNavLink to="/CSS">
                 <StyledIcon src={cssIcon} alt="CSS" />
             </StyledNavLink>
-            <StyledNavLink to="JavaScript">
+            <StyledNavLink to="JavaScript/">
                 <StyledIcon src={jsIcon} alt="JS" />
             </StyledNavLink>
         </NavLinkWrapper>
