@@ -12,7 +12,11 @@ const NavScrollbar = () => {
     const themeColor = useThemeColor();
 
     const scrollToSection = (sectionId) => {
-        document.getElementById(sectionId).scrollIntoView({ behavior: "smooth" })
+        const section = document.getElementById(sectionId);
+        if (section) {
+            const offSetTop = section.offsetTop -120; // offset of margin top
+            window.scrollTo({ top: offSetTop, behavior: "smooth" });
+        }
     };
 
     const sections = {
