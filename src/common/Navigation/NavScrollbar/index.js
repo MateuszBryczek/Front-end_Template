@@ -6,6 +6,7 @@ import {
 import { useLocation } from "react-router-dom";
 import useThemeColor from "../../../features/useThemeColor/useThemeColor";
 import Dropdown from "./DropdownList";
+import { useEffect } from "react";
 
 const NavScrollbar = () => {
     const location = useLocation();
@@ -44,6 +45,9 @@ const NavScrollbar = () => {
     const currentPath = location.pathname;
     const currentSections = sections[currentPath] || [];
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [currentPath]);
 
     //add getThemeColor ?
     return (
